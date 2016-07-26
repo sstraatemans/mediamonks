@@ -32,6 +32,12 @@
         }
       }
 
+      .counter-text{
+        &:after{
+          content: "Step #{$numb} out of 8 on the path to digital enlightenment.";
+        }
+      }
+
       @if $numb > 0 {
         .arrow-backward{
           transition: all 1s;
