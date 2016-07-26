@@ -39,6 +39,8 @@
   }
 
   &.a0{
+    animation: showcontent 3s;
+    animation-fill-mode: forwards;
     .content-title{
       top: 30px;
       left: 30px;
@@ -52,6 +54,8 @@
     }
   }
   &.a1{
+    animation: showcontent 3s;
+    animation-fill-mode: forwards;
     .content-title{
       top: 38%;
       left: 80px;
@@ -60,6 +64,8 @@
     }
   }
   &.a2{
+    animation: showcontent 3s;
+    animation-fill-mode: forwards;
     .content-title{
       top: 38%;
       left: 80px;
@@ -68,6 +74,8 @@
     }
   }
   &.a3{
+    animation: showcontent 3s;
+    animation-fill-mode: forwards;
     .content-title{
       top: 38%;
       right: 80px;
@@ -78,6 +86,8 @@
     }
   }
   &.a4{
+    animation: showcontent 3s;
+    animation-fill-mode: forwards;
     .content-title{
       top: 38%;
       right: 80px;
@@ -88,6 +98,8 @@
     }
   }
   &.a5{
+    animation: showcontent 3s;
+    animation-fill-mode: forwards;
     .content-title{
       top: calc(38% - 65px);
       right: 80px;
@@ -98,6 +110,8 @@
     }
   }
   &.a6{
+    animation: showcontent 3s;
+    animation-fill-mode: forwards;
     .content-title{
       top: 38%;
       left: 80px;
@@ -106,6 +120,8 @@
     }
   }
   &.a7{
+    animation: showcontent 3s;
+    animation-fill-mode: forwards;
     .content-title{
       top: 38%;
       left: 80px;
@@ -114,6 +130,8 @@
     }
   }
   &.a8{
+    animation: showcontent 4s;
+    animation-fill-mode: forwards;
     .content-title{
       top: 38%;
       left: 80px;
@@ -122,7 +140,8 @@
     }
   }
   &.a9{
-
+    animation: showcontent 3s;
+    animation-fill-mode: forwards;
     .content-title{
       top: 30px;
       right: 30px;
@@ -136,5 +155,18 @@
       right: 30px;
       text-align: right;
     }
+  }
+}
+
+
+@keyframes showcontent {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
