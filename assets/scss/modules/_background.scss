@@ -1,0 +1,47 @@
+.background{
+  position: relative;
+  top: 0;
+  min-height: 100%;
+  z-index: 0;
+
+  background: $background-color;
+  background: url(../image/background.jpg) no-repeat fixed;
+  background-position: 0 0;
+  background-size: cover;
+  transition: all 2s;
+}
+
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9{
+  display: none;
+}
+
+#a0{
+  @include showContent(0, 0);
+}
+#a1{
+  @include showContent(1, 15%);
+}
+#a2{
+  @include showContent(2, 23%);
+}
+#a3{
+  @include showContent(3, 37%);
+}
+#a4{
+  @include showContent(4, 51%);
+}
+#a5{
+  @include showContent(5, 65%);
+}
+#a6{
+  @include showContent(6, 79%);
+}
+#a7{
+  @include showContent(7, 93%);
+}
+#a8{
+  @include showContent(8, 100%);
+}
+#a9{
+  @include showContent(9, calc(100% - 500px));
+}

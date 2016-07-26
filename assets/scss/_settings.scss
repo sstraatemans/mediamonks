@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "klavika";
+  src: url("../font/klavika/klavika-regular-webfont.eot");
+  src: url("../font/klavika/klavika-regular-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../font/klavika/klavika-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "klavika-light";
+  src: url("../font/klavika/klavika-light-webfont.eot");
+  src: url("../font/klavika/klavika-light-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../font/klavika/klavika-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$body-fontfamily: "klavika", Arial, sans-serif;
+$header-fontfamily: "klavika-light", Arial, sans-serif;
+$background-color: rgb(16, 16, 16);
+$font-color: rgba(255, 255, 255, 1.0);
+$font-color-hover: rgba(255, 255, 255, .5);
+
+
+$arrow-color: rgba(255, 255, 255, 1.0);
+$arrow-color-hover: rgba(255, 255, 255, .5);
+
+
+$contact-backgroundcolor: rgba(255, 0, 0, 1.0);

@@ -1,0 +1,32 @@
+{
+  "name": "MediaMonk_Flash_Test",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "typings install"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^2.1.1",
+    "browser-sync": "^2.13.0",
+    "core-js": "^2.4.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-copy": "0.0.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6",
+    "gulp-todoist": "0.0.2",
+    "gulp-typescript": "^2.8.0",
+    "gulp-uglify": "^1.5.3",
+    "jasmine-core": "^2.4.1",
+    "raw-loader": "^0.5.1",
+    "run-sequence": "^1.2.2",
+    "source-map-loader": "^0.1.5",
+    "typescript": "^1.8.10",
+    "uglify-js": "^2.7.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {}
+}

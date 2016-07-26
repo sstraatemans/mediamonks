@@ -1,0 +1,155 @@
+.loader{
+
+  position: absolute;
+  display: flex;
+  top: 0;
+  z-index: 2;
+
+  min-height: 100%;
+  min-width: 100%;
+
+  display: none;
+
+  background: url(../image/loaderbg.png) no-repeat center center;
+  background-size: cover;
+  background-color: $background-color;
+
+  .monk{
+    position: relative;
+    margin: auto;
+    top: -30px;
+    width: 400px;
+    text-align: center;
+
+    img{
+      animation: showmonk 1s ease-out, animmonk 2s infinite ease-in-out;
+    }
+    >div{
+      margin-top: 40px;
+      span{
+        color: $font-color;
+        font-style: italic;
+        &:before{
+          content: "Patience! ";
+          animation: showtext 5s;
+          animation-fill-mode: forwards;
+        }
+        &:after{
+          content: "young padawan...";
+          animation: showtext2 10s;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes showmonk {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animmonk {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -30px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+@keyframes showtext {
+  0% {
+    font-size: 0rem;
+    content: "Patience!";
+    opacity: 0;
+  }
+  20% {
+    font-size: 0rem;
+  }
+  25% {
+    font-size: 1.3rem;
+    opacity: 1;
+  }
+  27% {
+    font-size: 0.9rem;
+  }
+  28% {
+    font-size: 1rem;
+  }
+  90% {
+    content: "Patience!";
+  }
+  91% {
+    content: "Patience, ";
+  }
+  100% {
+    content: "Patience, ";
+  }
+}
+
+@keyframes showtext2 {
+  0% {
+    content: "";
+  }
+  50%{
+    content: "";
+  }
+  51% {
+    content: "y";
+  }
+  52% {
+    content: "yo";
+  }
+  53% {
+    content: "you";
+  }
+  54% {
+    content: "young";
+  }
+  55% {
+    content: "young p";
+  }
+  56% {
+    content: "young pa";
+  }
+  57% {
+    content: "young pad";
+  }
+  58% {
+    content: "young pada";
+  }
+  59% {
+    content: "young padaw";
+  }
+  60% {
+    content: "young padawa";
+  }
+  61% {
+    content: "young padawan";
+  }
+  62% {
+    content: "young padawan.";
+  }
+  62% {
+    content: "young padawan..";
+  }
+  64% {
+    content: "young padawan...";
+  }
+  100% {
+    content: "young padawan...";
+  }
+}

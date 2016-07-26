@@ -1,0 +1,140 @@
+.content{
+  position: absolute;
+  display: none;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index:1;
+
+
+  .content-title{
+    position:absolute;
+    h2{
+      display: inline;
+      font-family: $header-fontfamily;
+      font-size: 3.3rem;
+      text-transform: uppercase;
+      border-bottom: 1px solid $font-color;
+    }
+
+    svg{
+      path{
+        fill: $font-color;
+      }
+    }
+  }
+
+
+  .content-subtext{
+    position: absolute;
+    font-size: 0.8rem;
+    a:hover{
+      text-decoration: underline;
+    }
+    img{
+      margin-bottom: -3px;
+      margin-left: 1rem;
+      height: 1rem;
+    }
+  }
+
+  &.a0{
+    .content-title{
+      top: 30px;
+      left: 30px;
+      margin-top: -15px;
+      width: 450px;
+    }
+    .content-subtext{
+      bottom: 120px;
+      left: 30px;
+
+    }
+  }
+  &.a1{
+    .content-title{
+      top: 38%;
+      left: 80px;
+      margin-top: -15px;
+      width: 400px;
+    }
+  }
+  &.a2{
+    .content-title{
+      top: 38%;
+      left: 80px;
+      margin-top: -15px;
+      width: 400px;
+    }
+  }
+  &.a3{
+    .content-title{
+      top: 38%;
+      right: 80px;
+      margin-top: -15px;
+      width: 450px;
+
+      text-align: right;
+    }
+  }
+  &.a4{
+    .content-title{
+      top: 38%;
+      right: 80px;
+      margin-top: -15px;
+      width: 450px;
+
+      text-align: right;
+    }
+  }
+  &.a5{
+    .content-title{
+      top: calc(38% - 65px);
+      right: 80px;
+      margin-top: -15px;
+      width: 450px;
+
+      text-align: right;
+    }
+  }
+  &.a6{
+    .content-title{
+      top: 38%;
+      left: 80px;
+      margin-top: -15px;
+      width: 400px;
+    }
+  }
+  &.a7{
+    .content-title{
+      top: 38%;
+      left: 80px;
+      margin-top: -15px;
+      width: 500px;
+    }
+  }
+  &.a8{
+    .content-title{
+      top: 38%;
+      left: 80px;
+      margin-top: -15px;
+      width: 500px;
+    }
+  }
+  &.a9{
+
+    .content-title{
+      top: 30px;
+      right: 30px;
+      margin-top: -15px;
+      width: 450px;
+
+      text-align: right;
+    }
+    .content-subtext{
+      top: 38%;
+      right: 30px;
+      text-align: right;
+    }
+  }
+}

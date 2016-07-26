@@ -1,0 +1,51 @@
+@mixin showContent ($numb, $flow) {
+  &:target{
+    &~.background{
+      background-position: $flow 0;
+    }
+    &~.foreground{
+      a[href="#a#{$numb}"]{
+        &>span{
+          background-color: $font-color;
+        }
+      }
+
+      ".content.a#{$numb}"{
+        display: block;
+      }
+      @if $numb > 0 {
+        .arrow-backward{
+          transition: all 1s;
+          opacity: 1.0;
+        }
+      }
+      @if $numb == 0 {
+        .arrow-backward{
+          transition: all 1s;
+          opacity: 0;
+        }
+        .counter-text{
+          transition: all .4s;
+          opacity: .0;
+        }
+      }
+      @if $numb < 9 {
+        .arrow-forward{
+
+          transition: all 1s;
+          opacity: 1.0;
+        }
+      }
+      @if $numb == 9 {
+        .arrow-forward{
+          transition: all 1s;
+          opacity: .0;
+        }
+        .counter-text{
+          transition: all .4s;
+          opacity: .0;
+        }
+      }
+    }
+  }
+}
