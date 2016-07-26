@@ -10,7 +10,8 @@
   transition: opacity 1s;
 
 
-  &>div{
+  &>a{
+    display: block;
     position: absolute;
     top: 38%;
     width: 35px;
@@ -29,7 +30,7 @@
     left: 0;
 
 
-    &>div{
+    &>a{
       left: 40px;
       border-top: 0;
       border-right: 0;
@@ -37,7 +38,7 @@
   }
   &.arrow-forward{
     right: 0;
-    &>div{
+    &>a{
 
       right: 40px;
       border-bottom: 0;
@@ -47,7 +48,7 @@
 
   &:hover{
     &.arrow-backward{
-      &>div{
+      &>a{
         left: 15px;
         transition: all .2s;
         border-color: $arrow-color-hover;
@@ -55,7 +56,7 @@
     }
 
     &.arrow-forward{
-      &>div{
+      &>a{
         right: 15px;
         transition: all .2s;
         border-color: $arrow-color-hover;

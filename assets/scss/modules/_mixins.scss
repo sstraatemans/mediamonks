@@ -13,6 +13,25 @@
       ".content.a#{$numb}"{
         display: block;
       }
+
+      .arrow-backward{
+        a{
+          display:none;
+          &:nth-child(#{$numb}){
+            display: block;
+          }
+        }
+      }
+
+      .arrow-forward{
+        a{
+          display:none;
+          &:nth-child(#{$numb+1}){
+            display: block;
+          }
+        }
+      }
+
       @if $numb > 0 {
         .arrow-backward{
           transition: all 1s;
