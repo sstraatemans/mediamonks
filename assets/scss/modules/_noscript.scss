@@ -1,0 +1,23 @@
+.loader{
+  animation: noscriptanim 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes noscriptanim {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  99% {
+    opacity: .0;
+    display: block;
+    z-index:100;
+  }
+  100% {
+    opacity: .0;
+    display: none;
+    z-index:0;
+  }
+}

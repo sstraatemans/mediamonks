@@ -1,7 +1,9 @@
 html, body {
   position: absolute;
 	height: 100%;
+  min-height: $min-height;
   width: 100%;
+  min-width: $min-width;
 	margin: 0;
   overflow:hidden;
 
@@ -30,7 +32,7 @@ h1{
   height: 60px;
 
   text-indent: -9999px;
-  background: url('../image/mediamonks_logo_new.png') no-repeat right;
+  background: url('../image/logo.svg') no-repeat right;
   background-size: 100%;
 
   z-index: 100;

@@ -13,7 +13,7 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.ts$/, loader: 'awesome-typescript', exclude: [/client\/lib/, /node_modules/, /\.spec\.js/] }
+      { test: /\.ts$/, loader: 'awesome-typescript', exclude: [/node_modules/] }
     ]
   }
 };

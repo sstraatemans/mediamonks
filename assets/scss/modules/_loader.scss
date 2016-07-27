@@ -8,14 +8,13 @@
   min-height: 100%;
   min-width: 100%;
 
-  display: none;
-
   background: url(../image/loaderbg.png) no-repeat center center;
   background-size: cover;
   background-color: $background-color;
 
   .monk{
     position: relative;
+    display: none;
     margin: auto;
     top: -30px;
     width: 400px;
@@ -30,17 +29,52 @@
         color: $font-color;
         font-style: italic;
         &:before{
+          display: inline-block;
           content: "Patience! ";
-          animation: showtext 5s;
+          animation: showtext 2.5s;
           animation-fill-mode: forwards;
         }
         &:after{
+          position: relative;
+          display: inline-block;
+          top: 5px;
           content: "young padawan...";
-          animation: showtext2 10s;
+          overflow: hidden;
+          text-indent: -999px;
+          animation: showtext2 2.5s linear;
           animation-fill-mode: forwards;
+
         }
       }
     }
+  }
+
+  &.open{
+    .monk{
+      display: block;
+    }
+  }
+
+  &.close{
+    animation: closeloader 1s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes closeloader {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  99% {
+    opacity: .0;
+    z-index:100;
+  }
+  100% {
+    opacity: .0;
+    z-index:0;
   }
 }
 
@@ -59,13 +93,13 @@
 
 @keyframes animmonk {
   0% {
-    margin-top: 0;
+    transform: translateY(0px);
   }
   50% {
-    margin-top: -30px;
+    transform: translateY(- 20px);
   }
   100% {
-    margin-top: 0;
+    transform: translateY(0px);
   }
 }
 
@@ -89,10 +123,10 @@
   28% {
     font-size: 1rem;
   }
-  90% {
+  75% {
     content: "Patience!";
   }
-  91% {
+  76% {
     content: "Patience, ";
   }
   100% {
@@ -102,54 +136,12 @@
 
 @keyframes showtext2 {
   0% {
-    content: "";
+    text-indent: -200px;
   }
-  50%{
-    content: "";
-  }
-  51% {
-    content: "y";
-  }
-  52% {
-    content: "yo";
-  }
-  53% {
-    content: "you";
-  }
-  54% {
-    content: "young";
-  }
-  55% {
-    content: "young p";
-  }
-  56% {
-    content: "young pa";
-  }
-  57% {
-    content: "young pad";
-  }
-  58% {
-    content: "young pada";
-  }
-  59% {
-    content: "young padaw";
-  }
-  60% {
-    content: "young padawa";
-  }
-  61% {
-    content: "young padawan";
-  }
-  62% {
-    content: "young padawan.";
-  }
-  62% {
-    content: "young padawan..";
-  }
-  64% {
-    content: "young padawan...";
+  90% {
+    text-indent: -200px;
   }
   100% {
-    content: "young padawan...";
+    text-indent: 5px;
   }
 }
