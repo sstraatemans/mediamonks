@@ -1,6 +1,9 @@
 .loader{
   animation: noscriptanim 6s;
   animation-fill-mode: forwards;
+  .monk{
+    display: block;
+  }
 }
 
 @keyframes noscriptanim {

@@ -4,7 +4,7 @@ It was the purpose of this test to recreate the Flash website `http://devmonks.v
 
 I tried to create the website with HTML + CSS only.  
 Only for the pre-loader, some Javascript was needed.
-When you disable javascript in the browser, the pre-loader animation will play once and then show you the working website.
+When you disable Javascript in the browser, the pre-loader animation will play once and then show you the working website.
 Please follow the instructions below to build the website.
 
 ## installation instructions

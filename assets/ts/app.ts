@@ -5,9 +5,15 @@ The loader is called 2 times. 1 time for the preloader
 **/
   import {PreLoader} from "./preloader.ts";
   import {sleep} from "./sleep.ts";
+  import {IEfix} from "./iefix.ts";
+
+
+  //promises don't work on IE. sorry I could not get fix here. I was out of time.
+  IEfix();
 
   //makes sure that the app always starts at page 0. no deeplinking allowed.
   window.location.hash = "#a0";
+
 
   var loaderimages = ['image/loaderbg.png','image/monk.png'];
   var appImages = ['image/background.jpg','image/logo.svg','image/svg/mail.svg','image/svg/facebook.svg','image/svg/twitter.svg'];
@@ -16,6 +22,11 @@ The loader is called 2 times. 1 time for the preloader
   //this way the loader animation is played at least once, when the images are cached or loaded really fast.
   let imagesAllLoaded = false;
   let animationPlayed = false;
+
+
+
+
+
 
   //called when the final images are loaded.
   //now we can check if we can open the app itself.
@@ -41,6 +52,8 @@ The loader is called 2 times. 1 time for the preloader
       loader.classList.add("close");
     }
   }
+
+
 
   PreLoader.getLoaderImages(loaderimages, openLoaderCallback);
 
